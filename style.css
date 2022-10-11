@@ -16,13 +16,14 @@ body,
 }
 .card {
   border: solid 1rem #ffc107;
-  padding: 3%;
+  padding: 1%;
   border-radius: 2.5rem;
   box-shadow: 1rem 0.5rem 0.5rem black;
   background-color: #448aff;
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
   text-align: center;
+  transition: all 0.3s;
 }
 h1 {
   text-align: center;
@@ -44,4 +45,7 @@ h2 {
 #text {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 2rem;
+}
+.card:hover {
+  transform: scale(1.25);
 }
