@@ -16,7 +16,7 @@ body,
 }
 .card {
   border: solid 1rem #ffc107;
-  padding: 1%;
+  padding: 2%;
   border-radius: 2.5rem;
   box-shadow: 1rem 0.5rem 0.5rem black;
   background-color: #448aff;
@@ -33,19 +33,27 @@ h1 {
 #image {
   width: 30rem;
 }
-h2 {
+.description {
   text-align: center;
   font-size: 3rem;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
-  border: solid black;
   padding: 1rem;
-  margin: 5rem;
+  margin: 7rem;
+  transition: all 0.5s;
+  outline-offset: 0.5rem;
 }
 #text {
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+#row3 {
+  margin-bottom: 10rem;
 }
 .card:hover {
   transform: scale(1.25);
+}
+.description:hover {
+  outline: 1rem solid black;
+  transform: scaley(1.5) scaleX(1.05);
 }
