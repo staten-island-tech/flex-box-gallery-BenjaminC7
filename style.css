@@ -29,6 +29,8 @@ h1 {
   text-align: center;
   font-size: 10rem;
   font-family: "Oswald", sans-serif;
+  animation-duration: 3s;
+  animation-name: title;
 }
 #image {
   width: 30rem;
@@ -56,4 +58,28 @@ h1 {
 .description:hover {
   outline: 1rem solid black;
   transform: scale(1.06);
+}
+.icon {
+  font-size: 5rem;
+  border: #ffc107 solid;
+  border-radius: 2rem;
+  transition: all 0.7s;
+  background-color: #448aff;
+}
+.icon:hover {
+  transform: translate(3rem);
+}
+#image:hover:not(.card:hover) {
+  transform: scale(1.15);
+}
+@keyframes title {
+  from {
+    margin-left: 25%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
