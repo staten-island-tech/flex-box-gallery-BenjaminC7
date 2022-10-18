@@ -72,6 +72,12 @@ h1 {
 #image:hover:not(.card:hover) {
   transform: scale(1.15);
 }
+#alm {
+  width: 30rem;
+}
+#alm:hover {
+  transform: rotate(20deg);
+}
 @keyframes title {
   from {
     margin-left: 25%;
@@ -81,5 +87,33 @@ h1 {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+@media all and (max-width: 390px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+  #image {
+    width: 25rem;
+  }
+  #alm {
+    width: 25rem;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .row > * {
+    margin: 2rem;
+  }
+  #text {
+    font-size: 1.5rem;
   }
 }
