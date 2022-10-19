@@ -76,7 +76,8 @@ h1 {
   width: 30rem;
 }
 #alm:hover {
-  transform: rotate(20deg);
+  transform: rotate(360deg);
+  transition: all 2s;
 }
 @keyframes title {
   from {
@@ -89,6 +90,53 @@ h1 {
     width: 100%;
   }
 }
+
+@media all and (max-width: 1024px) {
+  h1 {
+    font-size: 7rem;
+  }
+  #image {
+    width: 20rem;
+  }
+  #alm {
+    width: 20rem;
+  }
+  #text {
+    font-size: 1.2rem;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .row > * {
+    margin: 2rem;
+  }
+  .description {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+  #image {
+    width: 27rem;
+  }
+  #alm {
+    width: 27rem;
+  }
+  #text {
+    font-size: 1.7rem;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .row > * {
+    margin: 2rem;
+  }
+}
+
 @media all and (max-width: 390px) {
   h1 {
     font-size: 3rem;
